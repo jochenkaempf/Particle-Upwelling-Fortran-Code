@@ -4,7 +4,9 @@ Modified Versions of the COHERENS model (Luyten et al., 1999) uses to simulate p
 In order to run this model, one must create a folder "dat" for the data output. When using the G95 Fortran compiler, the model code can be compiled and run with the instructions:
 
 g95 -c param.f90 Functions.f90 cohini.f90 cohrun.f90
+
 g95 -o runB.exe bossNEW.f90 param.o Functions.o cohini.o cohrun.o
+
 runB.exe 
 
 The uploaded PDF entitled "OriginalSubmissionSmall" includes descriptions of all model settings implemented in the model code. Note that this code refers to the experiment "B-narrow" that uses the bathymetry file "topo1.dat" as input file. The FORTRAN code "canyon1.f95" created this bathymetry. It can also be used to produce the other bathymetries describes in the scientific text.   
